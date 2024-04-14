@@ -1,0 +1,123 @@
+
+#task-form {
+    margin-bottom: 20px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 20px; 
+}
+
+#task-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; 
+}
+
+#task-form input[type="text"] {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#task-form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#task-form button:hover {
+    background-color: #2980b9;
+}
+
+#task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#task-table th, #task-table td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+    text-align: left;
+}
+
+#task-table th {
+    background-color: #f2f2f2;
+}
+
+
+#timer-controls {
+    margin-bottom: 20px;
+}
+
+#start-timer, #stop-timer {
+    padding: 12px 24px; 
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#start-timer:hover, #stop-timer:hover {
+    background-color: #219a52;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+#filter-container {
+    margin-bottom: 20px;
+}
+
+#filter-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; 
+}
+
+#filter-container input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#timer-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#timer-controls button {
+    margin-left: 15px;
+}
+
+#table-container {
+    position: relative;
+}
+
+#timer-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    margin-left: -20px;
+}
+
+#filter-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+} 

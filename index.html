@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager</title>
+<link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+<h1>Task Manager</h1>
+
+<form id="task-form">
+    <label for="task-name">Task Name:</label>
+    <input type="text" id="task-name" required>
+    <label for="task-desc">Description:</label>
+    <input type="text" id="task-desc" required>
+    <button type="submit">Add Task</button>
+</form>
+<br>
+<div id="table-container">
+    <div id="timer-controls">
+        <button id="start-timer">Start Timer</button>
+        <button id="stop-timer">Stop Timer</button>
+        <div id="timer"></div> <!-- Timer will be displayed here -->
+    </div>
+
+    <div id="filter-container">
+        <label for="task-filter">Filter by Task Name:</label>
+        <input type="text" id="task-filter">
+        <datalist id="task-names"></datalist> <!-- Autocomplete dropdown -->
+    </div>
+
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Description</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tasks will be added here dynamically -->
+        </tbody>
+    </table>
+</div>
+
+<script src="task.js"></script>
+</body>
+</html>
