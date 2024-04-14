@@ -1,3 +1,6 @@
+*{
+    font-family:sans-serif;
+}
 
 #task-form {
     margin-bottom: 20px;
@@ -6,13 +9,23 @@
     border-radius: 8px;
     padding: 20px; 
 }
-
+tbody{
+    background-color: white;
+}
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed; */
+}
 #task-form label {
-    display: block;
+    /* display: block; */
     margin-bottom: 10px;
     font-weight: bold; 
 }
-
+.head{
+    color: wheat;
+}
 #task-form input[type="text"] {
     width: calc(100% - 20px); 
     padding: 10px;
